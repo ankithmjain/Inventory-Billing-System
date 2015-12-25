@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fbp.controller.AdminSaleController">
+   <children>
+      <TableView fx:id="vieworders" layoutX="55.0" layoutY="91.0" prefHeight="200.0" prefWidth="504.0">
+        <columns>
+          <TableColumn fx:id="oid" prefWidth="61.0" text="Order ID" />
+          <TableColumn fx:id="pid" minWidth="5.0" prefWidth="71.0" text="Product ID" />
+            <TableColumn fx:id="prodname" prefWidth="113.0" text="ProdName" />
+            <TableColumn fx:id="orderdetail" prefWidth="146.0" text="OrderDetail" />
+            <TableColumn fx:id="username" minWidth="0.0" prefWidth="112.0" text="CustomerName" />
+        </columns>
+      </TableView>
+      <Text layoutX="224.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    Admin Sales Module" wrappingWidth="172.99999648332596">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Text>
+      <Button layoutX="193.0" layoutY="346.0" mnemonicParsing="false" onAction="#createsale" prefHeight="25.0" prefWidth="103.0" text="Create Sale">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="salesamount" layoutX="173.0" layoutY="308.0" />
+      <Text layoutX="110.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="     Select the item you want to create sale and write sales amount below" wrappingWidth="403.99999648332596">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Text>
+      <Text layoutX="56.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter  Sales Amount" wrappingWidth="124.99999648332596">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Button layoutX="345.0" layoutY="347.0" mnemonicParsing="false" onAction="#viewsales" text="View All Sales">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="533.0" layoutY="365.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Text layoutX="202.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of Orders to Create Sale" wrappingWidth="245.6259765625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fbp.controller.CustomerWelcomeController">
+   <children>
+      <TableView fx:id="viewproducts" layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="343.0">
+        <columns>
+          <TableColumn fx:id="pid" prefWidth="81.0" text="PID" />
+          <TableColumn fx:id="prodname" minWidth="5.0" prefWidth="142.0" text="ProdName" />
+            <TableColumn fx:id="prodcategory" minWidth="0.0" prefWidth="119.0" text="ProdCategory" />
+        </columns>
+      </TableView>
+      <Text layoutX="150.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="              Customer Welcome Page" wrappingWidth="266.99999648332596">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Text>
+      <Button layoutX="192.0" layoutY="360.0" mnemonicParsing="false" onAction="#createorder" prefHeight="29.0" prefWidth="132.0" text="Create Order">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <TextField fx:id="orderdetail" layoutX="171.0" layoutY="316.0" prefHeight="25.0" prefWidth="178.0" />
+      <Text layoutX="12.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the product you wish below by mouse click and write your order details " wrappingWidth="461.99999648332596">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text layoutX="49.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Order Details" wrappingWidth="122.99999648332596">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Text>
+      <Button layoutX="510.0" layoutY="28.0" mnemonicParsing="false" onAction="#signout" text="SignOut">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="468.0" layoutY="161.0" mnemonicParsing="false" onAction="#viewmyorder" prefHeight="29.0" prefWidth="123.0" text="ViewMyOrder">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="443.0" layoutY="111.0" mnemonicParsing="false" onAction="#editcustomer" text="Edit Customer Details">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text layoutX="167.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Store Products" wrappingWidth="109.00000667572021">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

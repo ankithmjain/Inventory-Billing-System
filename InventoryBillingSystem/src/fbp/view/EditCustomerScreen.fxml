@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fbp.controller.EditCustomerController">
+   <children>
+      <Text layoutX="127.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME" wrappingWidth="97.13671875">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Text>
+      <Text layoutX="128.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD" wrappingWidth="97.13671875">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Text>
+      <Text layoutX="127.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADDRESS" wrappingWidth="97.13671875">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Text>
+      <Text layoutX="127.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL" wrappingWidth="97.13671875">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Text>
+      <TextField fx:id="username" layoutX="239.0" layoutY="81.0" />
+      <TextField fx:id="address" layoutX="241.0" layoutY="154.0" />
+      <TextField fx:id="email" layoutX="239.0" layoutY="187.0" />
+      <PasswordField fx:id="password" layoutX="241.0" layoutY="120.0" />
+      <Text layoutX="157.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    Customer Details Updation Form" wrappingWidth="288.13671875">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="489.0" layoutY="340.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="243.0" layoutY="241.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="156.0" text="Update your Detals">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="55.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applicable to Existing Customer" />
+   </children>
+</AnchorPane>

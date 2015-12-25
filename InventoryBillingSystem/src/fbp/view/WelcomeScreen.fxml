@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fbp.controller.WelcomeController">
+   <children>
+      <Label layoutX="75.0" layoutY="14.0" prefHeight="54.0" prefWidth="425.0" text="           Welcome to Katariya Jewels Billing System" textFill="#971d1d">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="57.0" layoutY="151.0" mnemonicParsing="false" onAction="#addproduct" prefHeight="41.0" prefWidth="207.0" text="Product Inventory Module" textFill="#971d1d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="329.0" layoutY="151.0" mnemonicParsing="false" onAction="#createsales" prefHeight="41.0" prefWidth="207.0" text=" Sales Module" textFill="#971d1d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="465.0" layoutY="330.0" mnemonicParsing="false" onAction="#signout" text="Sign Out" textFill="#971d1d">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

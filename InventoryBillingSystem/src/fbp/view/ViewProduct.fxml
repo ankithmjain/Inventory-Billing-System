@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fbp.controller.ViewProductController">
+   <children>
+      <TableView fx:id="viewproducts" layoutX="127.0" layoutY="64.0" prefHeight="236.0" prefWidth="363.0">
+        <columns>
+          <TableColumn fx:id="pid" prefWidth="87.0" text="Product ID" />
+          <TableColumn fx:id="prodname" prefWidth="126.0" text="Product Name" />
+            <TableColumn fx:id="prodcategory" prefWidth="149.0" text="ProductCategory" />
+        </columns>
+      </TableView>
+      <Button layoutX="302.0" layoutY="333.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Text layoutX="228.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      Store Products List" wrappingWidth="182.689453125">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+       </children>
+</AnchorPane>
